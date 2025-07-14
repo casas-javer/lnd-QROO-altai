@@ -26,6 +26,11 @@
             --ltn__primary-color: #002856;
         }
 
+        /* Aplica scroll suave a todo el sitio */
+        html {
+            scroll-behavior: smooth;
+        }
+
         .before-bg-bottom::before {
 
             background-color: #F2F6F7 !important;
@@ -332,6 +337,11 @@
         button.btn.theme-btn-1.btn-effect-1.text-uppercase.w-100 {
             letter-spacing: 4px;
         }
+
+        .scroll-target {
+            scroll-margin-top: 100px;
+            /* Ajusta el espacio a lo que necesites */
+        }
     </style>
 </head>
 
@@ -595,7 +605,8 @@
                                         crezcan cerca del hermoso mar que Cancún te ofrece.</p>
 
                                     <div class="btn-wrapper animated  ltn__animation-pulse2">
-                                        <a href="contact.html" class="theme-btn-1 btn btn-effect-1" tabindex="0">VER
+                                        <a href="#catania" class="theme-btn-1 btn btn-effect-1 scroll-target"
+                                            tabindex="0">VER
                                             INFORMACIÓN <i class="fa-solid fa-arrow-down"></i></a>
                                     </div>
                                 </div>
@@ -1298,7 +1309,7 @@ SLIDER AREA END -->
 
 
     <!-- ABOUT US AREA START -->
-    <div class="ltn__about-us-area section-bg-1 bg-image-right-before pt-120 pb-90 ">
+    <div id="catania" class="ltn__about-us-area section-bg-1 bg-image-right-before pt-120 pb-90 ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 align-self-center">
